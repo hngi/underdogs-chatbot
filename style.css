@@ -1,0 +1,98 @@
+/*--- navigation bar ---*/
+.navbar {
+    background:#801cc2;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .navbar-brand {
+    font-weight: 600;
+  }
+
+  .navbar-brand:hover {
+    color: rgb(204, 204, 204);
+  }
+  .nav-link {
+    margin-right: 1em !important;
+    font-weight: 600;
+  }
+  .nav-link:hover {
+    color: rgb(204, 204, 204);
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+.header {
+    background-image: url('/underdogs-chatbot/assets/images/undraw_Group_chat_unwm.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+}  
+
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+  }
+  .description h1 {
+    color: #6ab446;
+    font-weight: 800;
+  }
+  .description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .description a {
+    border:1px solid #801cc2;
+    background:#801cc2;
+    border-radius: 4px;
+    color:#fff;
+    transition: .4s;
+  }
+  .description button:hover {
+    border:1px solid #fff;
+    background:#fff;
+    color:#000;
+  }
+  @media (max-width: 575.98px) {
+    .description {
+      left: 0;
+      padding: 0 15px;
+      position: absolute;
+      top: 40%;
+      transform: none;
+      text-align: center;
+    }
+    
+    .description h1 {
+      font-size: 2em;
+    }
+    
+    .description p {
+      font-size: 1.2rem;
+    }
+    
+    .features {
+      margin: 0;
+    }
+  }
